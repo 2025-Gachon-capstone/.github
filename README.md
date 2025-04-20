@@ -7,6 +7,11 @@
 
 ## :memo: Table of Contents
 - [프로젝트 개요](#프로젝트-개요)
+- [프로젝트 Repository](#프로젝트-repository)
+  - [1. FrontEnd](#1-frontend)
+  - [2. BackEnd](#2-backend)
+  - [3. AI](#3-ai)
+  - [4. DevOps](#4-devops)
 - [DevOps](#-devops)
   - [1. Architecture](#1-architecture)
   - [2. 설계 개요](#2-설계-개요)
@@ -17,6 +22,29 @@
 
 # 프로젝트 개요
 (진행중...)
+
+<br>
+<br>
+<br>
+
+# 프로젝트 Repository
+### 1. FrontEnd
+1. [Omni-FE](https://github.com/2025-Gachon-capstone/Omni-FE)
+
+### 2. BackEnd
+1. [Omni-BE-Gateway](https://github.com/2025-Gachon-capstone/Omni-BE-Gateway)
+2. [Omni-BE-User](https://github.com/2025-Gachon-capstone/Omni-BE-User)
+3. [Omni-BE-Sponsor](https://github.com/2025-Gachon-capstone/Omni-BE-Sponsor)
+4. [Omni-BE-Payment](https://github.com/2025-Gachon-capstone/Omni-BE-Payment)
+5. [Omni-BE-Card](https://github.com/2025-Gachon-capstone/Omni-BE-Card)
+6. [Omni-BE-File](https://github.com/2025-Gachon-capstone/Omni-BE-File)
+
+### 3. AI
+1. [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI)
+
+## 4. DevOps
+1. Omni-Manifest
+2. Omni-Manifest-Tool
 
 <br>
 <br>
