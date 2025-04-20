@@ -105,9 +105,10 @@
    - 대부분의 k8s 리소스들은 `GitOps 전략`을 통해 관리하여, <br>
      `운영 안정성` 및 `자동화`에 집중하고 있습니다.
 
-   1. `Deployment, Service, Secret Manifest`를 통한 WAS 배포
-   2. `App of Apps + Helm Chart`를 통한 kube-prometheus-stack과 loki-stack 배포
-   3. `ConfigMap` 리소스를 통한 Grafana Dashboard 구축
+     - `Deployment, Service, Secret Manifest`를 통한 WAS 배포
+     - `App of Apps + Helm Chart`를 통한 kube-prometheus-stack과 loki-stack 배포
+     - `ConfigMap` 리소스를 통한 Grafana Dashboard 구축
+   
    - 폴더 구조
      ```
      Omni-Manifest/
