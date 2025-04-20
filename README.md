@@ -1,5 +1,5 @@
 # Omni Card
-### [www.omnicard.shop](www.omnicard.shop)
+### [www.omnicard.shop](https://www.omnicard.shop/)
 
 <br>
 <br>
