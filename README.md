@@ -1,4 +1,9 @@
-# Omni Card - [www.omnicard.shop](www.omnicard.shop)
+# Omni Card
+### [www.omnicard.shop](www.omnicard.shop)
+
+<br>
+<br>
+<br>
 
 ## :memo: Table of Contents
 - [프로젝트 개요](#프로젝트-개요)
