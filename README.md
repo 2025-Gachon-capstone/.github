@@ -25,7 +25,7 @@
 <br>
 
 ### 2. 설계 개요
-1. ☁️ GCP 계정 분리 및 Terraform
+1. ☁️ GCP 계정 분리 및 Terraform 모듈
    - 운영 비용 절감을 위해, 총 `3개의 GCP 계정`을 사용했습니다. - 각각 300달러 제공
    - `AI`, `Dev`, `GCSDB` 3개의 계정이자 환경으로 구분했으며, <br>
      직접 구축한 [terraform-google-multi-env](https://github.com/steamedEggMaster/terraform-google-multi-env) 을 통해 효율적으로 멀티 환경을 관리합니다.
@@ -55,7 +55,7 @@
 5. 🔐 Workload Identity
    - GCP의 `Workload Identity` 기능을 통해, <br>
      별도의 Json 파일 사용 없이, `KSA(K8s Service Account)`가 <br>
-     자동 인증을 통해, `여러 계정의 리소스에 접근 가능`하도록 설정하였습니다.
+     `IAM Service Account`를 통해, `여러 계정의 리소스에 접근 가능`하도록 설정하였습니다.
     
 
 6. 🧠 Serverless Vertex AI
