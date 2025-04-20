@@ -125,8 +125,7 @@
         └─ 📊 card-service
         └─ 📊 shared-overview
              ├─ 🔍 전체 서비스의 로그인/회원가입 트렌드
-             ├─ 🔍 전체 서비스의 에러 비율 비교
-             └─ 🔍 느린 URI / 에러 높은 URI 비교 (Top 5 등)
+             └─ 🔍 전체 서비스의 에러 비율 비교
       
       📁 core-infra ## 데브옵스 중심
         └─ 📊 node-exporter를 통해 메모리, CPU 관리
