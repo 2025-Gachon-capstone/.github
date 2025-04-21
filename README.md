@@ -103,36 +103,6 @@
      비용 절감 및 쿠버네티스 환경의 리소스 관리 안정성,
      여러 장소에서 개발을 수행해야 하는 팀원들이 참여 가능한 모니터링 환경 구성.
    
-   - `팀의 운영에 도움이 되는 정보`들을 확인 가능하도록, <br>
-     `Custom Dashboard`를 `구축`하기 위해 노력하고 있습니다.
-
-   - 목표 대시보드 구성(업데이트 중)
-     ```
-     📁 core-backend ## 백엔드 중심
-        └─ 📊 user-service
-             └─ 1. 전체 요청 수 대비 에러 비율 5xx
-             └─ 2. 전체 요청 수 대비 에러 비율 4xx
-             └─ 3. 느린 URI Top 5
-             └─ 4. 4xx 에러 비율 높은 URI Top 5
-             └─ 5. 5xx 에러 비율 높은 URI Top 5
-             └─ 6. URI별 성공률
-             └─ 7. RPS
-             └─ 8. HTTP 상태 코드별 RPS
-             └─ 9. 분당 요청 수
-        └─ 📊 payment-service
-        └─ 📊 sponsor-service
-        └─ 📊 file-service
-        └─ 📊 card-service
-        └─ 📊 shared-overview
-             ├─ 🔍 전체 서비스의 로그인/회원가입 트렌드
-             └─ 🔍 전체 서비스의 에러 비율 비교
-      
-      📁 core-infra ## 데브옵스 중심
-        └─ 📊 node-exporter를 통해 메모리, CPU 관리
-        └─ 📊 pod & container 개수 확인
-        └─ 📊 JVM + GC + 메모리
-     ```
-   
 
 8. 🔄 GitOps 전략
    - 대부분의 k8s 리소스들은 `GitOps 전략`을 통해 관리하여, <br>
