@@ -115,10 +115,10 @@
              └─ 3. 느린 URI Top 5
              └─ 4. 4xx 에러 비율 높은 URI Top 5
              └─ 5. 5xx 에러 비율 높은 URI Top 5
-       	     └─ 6. URI별 성공률
-      	     └─ 7. RPS
-      	     └─ 8. HTTP 상태 코드별 RPS
-      	     └─ 9. 분당 요청 수
+             └─ 6. URI별 성공률
+             └─ 7. RPS
+             └─ 8. HTTP 상태 코드별 RPS
+             └─ 9. 분당 요청 수
         └─ 📊 payment-service
         └─ 📊 sponsor-service
         └─ 📊 file-service
