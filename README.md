@@ -102,9 +102,25 @@
    - `Grafana + Loki + Prometheus` 오픈소스 모니터링 조합을 사용하여, <br>
      비용 절감 및 쿠버네티스 환경의 리소스 관리 안정성, <br>
      여러 장소에서 개발을 수행해야 하는 팀원들이 참여 가능한 모니터링 환경 구성.
+
+   - 현재 구성중인 Custom Dashboard (지속적인 업데이트 중)
+     ```
+     📁 Backend
+       └─ 📁 Service Overview - 전체 서비스 골든 지표
+            └─ 1. RPS
+            └─ 2. p99 Response Time (ms)
+            └─ 3. 4xx 에러 비율
+            └─ 4. 5xx 에러 비율
+            └─ 5. Live Threads
+    	    └─ 6. JVM CPU Usage
+    	    └─ 7. JVM Heap Memory Usage
+          └─ 8. JVM Buffer Poll Usage
+            └─ 9. GC Preasure
+            └─ 10. File Descriptos Usage
+     ```
    
 
-8. 🔄 GitOps 전략
+9. 🔄 GitOps 전략
    - 대부분의 k8s 리소스들은 `GitOps 전략`을 통해 관리하여, <br>
      `운영 안정성` 및 `자동화`에 포커싱.
 
@@ -140,6 +156,6 @@
              └── 계속 추가중...
      ```
 
-9. 🔐 HTTPS 자동화
+10. 🔐 HTTPS 자동화
    - `Cert-Manager + Ingress Nginx`를 사용하여, <br>
      `HTTPS 적용` 및 `인증서 관리`를 `자동화`.
