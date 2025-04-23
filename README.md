@@ -90,6 +90,8 @@
    - GCP의 `Workload Identity` 기능을 통해, <br>
      별도의 Json 파일 사용 없이, `KSA(K8s Service Account)`가 <br>
      `IAM Service Account`를 통해, `여러 계정의 리소스에 접근 가능`하도록 설정.
+
+   - 현재 프로젝트의 경우 AI 계정의 GCS에, DB 계정의 GCS에 대한 Write 권한을 가진다.
     
 
 6. 🧠 Serverless Vertex AI
