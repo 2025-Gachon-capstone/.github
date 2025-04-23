@@ -91,7 +91,7 @@
      별도의 Json 파일 사용 없이, `KSA(K8s Service Account)`가 <br>
      `IAM Service Account`를 통해, `여러 계정의 리소스에 접근 가능`하도록 설정.
 
-   - 현재 프로젝트의 경우 AI 계정의 GCS에, DB 계정의 GCS에 대한 Write 권한을 가진다.
+   - 현재 프로젝트의 경우 AI 계정의 GCS에, GCSDB 계정의 GCS에 대한 Write 권한을 가진다.
     
 
 6. 🧠 Serverless Vertex AI
@@ -135,8 +135,8 @@
      Omni-Manifest/
      └── dev
          ├── Omni-BE-AI/
-         │   ├── deployment.yaml
-         │   └── secret.yaml
+         │   ├── deployment.yaml  # Deployment + Service 리소스 설정
+         │   └── secret.yaml      # Container 환경변수 설정값
          ├── Omni-BE-Gateway/
          │   ├── deployment.yaml
          │   └── secret.yaml
@@ -149,8 +149,8 @@
      Omni-Manifest-Tool/
      └── dev
          ├── Omni-Grafana/
-         │   ├── kube-prometheus-stack-charts.yaml
-         │   ├── loki-stack-charts.yaml
+         │   ├── kube-prometheus-stack-charts.yaml    # Grafana + Prometheus
+         │   ├── loki-stack-charts.yaml               # Loki + Promtail
          │   ├── Omni-Grafana-Certificate.yaml
          │   └── Omni-Grafana-Ingress.yaml
          └── Omni-Grafana-Dashboards/
