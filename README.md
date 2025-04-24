@@ -70,6 +70,8 @@
 
      => 직접 구축한 [terraform-google-multi-env](https://github.com/steamedEggMaster/terraform-google-multi-env) 을 통해 효율적으로 멀티 환경 관리.
 
+<br>
+
 2. 👬 IAM Workload Identity
    - k8s의 KSA(Kubernetes Service Account)를 GSA(GCP Service Account)와 매핑하여, <br>
      ✨ 별도의 `Json 파일없이 내부적인 인증`을 수행 ✨ 함으로써 안정성 및 편의성 증가. <br>
@@ -78,16 +80,20 @@
      
    - 계정 간 매핑도 가능하여, 다른 계정의 리소스(GCS 등)에 `내부적 인증으로 접근 가능한 엄청난 장점` 존재!
 
+<br>
+
 3. 📡 NLB + Ingress 네트워크 구성
    - GCP 프리티어 계정 `최대 IP 할당 개수 8개`를 넘지 않기 위해, <br>
      단일 접속 지점, 네트워크 비용 효율성, 리소스 관리 효율성을 위해, <br>
      `GCP Network LoadBalancer(4 Layer) + Ingress Controller` 조합 사용.
 
-   - NLB는 `TCP 및 IP 기반 Ingress Controller로의 로드밸런싱` 수행.
-     Ingress Controller는 `TLS 종료 및 경로, 헤더 기반으로 Service로의 라우팅` 수행.
-     Service는 `Pod로 로드 밸런싱` 수행
+   - NLB는 `TCP 및 IP 기반 Ingress Controller로의 로드밸런싱` 수행. <br>
+     Ingress Controller는 `TLS 종료 및 경로, 헤더 기반으로 Service로의 라우팅` 수행. <br>
+     Service는 `Pod로 로드 밸런싱` 수행.
 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => `총 2번의 로드밸런싱`으로 서버 안정성 극대화‼️
+
+<br>
 
 4. 🛤️ GCP Vertex AI 워크로드
    - 🚫 단기간에 AI 워크로드를 구축하는 것은 `경험 및 지식 부족`으로 불가❗️ <br>
@@ -95,6 +101,8 @@
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => GCP에서 제공하는 `서버리스 AI 워크로드 서비스` 사용.
    
    - GCS와의 연동을 통해 AI 훈련 결과 저장 및 GKE 플라스크 서버가 AI 모델 서빙
+
+<br>
 
 5. 🖥️ DB 서버용 VM Instance
    - 현재 우리 프로젝트에서 `MySQL`, `Neo4j`, `Milvus` 총 3개의 DB가 필요. <br>
@@ -128,10 +136,14 @@
 
      - [사용 가이드 노션 바로가기](https://smoggy-twister-652.notion.site/1db9ac17facf801f951adcc5fa9c901f?pvs=4) - 깃허브용
 
+<br>
+
 2. ✉️ k8s 내부 서버 간 통신을 `Service Name`(`내부 FQDN`)을 통해 수행.
    - Service 리소스는 Pod 집합에 대한 `단일 진입점 제공` 및 `로드 밸런싱 기능` 제공.
    - ✨ 경험한 최고의 장점 ✨ <br>
      : `도메인 기반 연결`이기에 애플리케이션 환경변수 변경이 필요없음. -> `마이그레이션 및 운영 효율성` 극대화‼️.
+
+<br>
 
 3. 📊 모니터링 환경
    - `Grafana + Loki + Prometheus` 오픈소스 모니터링 조합을 사용하여, <br>
@@ -153,6 +165,8 @@
             └─ 9. GC Preasure
             └─ 10. File Descriptos Usage
      ```
+
+<br>
 
 4. 🔄 GitOps 전략
    - 대부분의 k8s 리소스들은 `GitOps 전략`을 통해 관리하여, <br>
@@ -190,6 +204,8 @@
              └── 계속 추가중...
      ```
 
+<br>
+
 5. 🔐 HTTPS 자동화
    - `Cert-Manager + Ingress Nginx`를 사용하여, <br>
      `HTTPS 적용` 및 `인증서 관리`를 `자동화`.
@@ -209,6 +225,8 @@
 
    - 뒷단의 서버에서 로그인을 통해 `JWT Token 생성` 및 `반환`. <br>
      Gateway에서 `Filter`를 통해 `Token 유효성 검증`.
+
+<br>
 
 2. 🧷 Swagger UI 통합
    - 마이크로 서비스들의 Swagger가 흩어져 있기에, `각각을 직접 보기 힘들다`는 단점 존재.
