@@ -87,10 +87,10 @@
      Ingress Controller는 `TLS 종료 및 경로, 헤더 기반으로 Service로의 라우팅` 수행.
      Service는 `Pod로 로드 밸런싱` 수행
 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => `총 2번의 로드밸런싱`으로 서버 안정성 극대화!
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => `총 2번의 로드밸런싱`으로 서버 안정성 극대화‼️
 
 4. 🛤️ GCP Vertex AI 워크로드
-   - 🚫 단기간에 AI 워크로드를 구축하는 것은 경험 및 지식 부족으로 불가. <br>
+   - 🚫 단기간에 AI 워크로드를 구축하는 것은 `경험 및 지식 부족`으로 불가❗️ <br>
 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => GCP에서 제공하는 `서버리스 AI 워크로드 서비스` 사용.
    
