@@ -65,7 +65,7 @@
 <hr>
 
 1. 🧾 Terraform 모듈 기반 GCP 멀티 환경 구성
-   - 운영 비용 절감을 위해, 총 3개의 GCP 계정 사용. - 각각 300달러 제공
+   - 운영 비용 절감을 위해, 총 `3개의 GCP 계정` 사용. - ✨ 각각 300달러 제공 ✨
    - `AI`, `Dev`, `GCSDB` 3개의 환경으로 구분. <br>
 
      => 직접 구축한 [terraform-google-multi-env](https://github.com/steamedEggMaster/terraform-google-multi-env) 을 통해 효율적으로 멀티 환경 관리.
