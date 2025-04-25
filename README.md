@@ -229,7 +229,10 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
    - 뒷단의 서버에서 로그인을 통해 `JWT Token 생성` 및 `반환`. <br>
      Gateway에서 `Filter`를 통해 `Token 유효성 검증`.
-
+  
+   - 브라우저 <-> Gateway <-> MSA 이기에, <br>
+     Gateway에서만 `CORS 설정`을 하여 Allow Origin 수행.
+  
 <br>
 
 2. 🧷 Swagger UI 통합
