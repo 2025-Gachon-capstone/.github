@@ -115,7 +115,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
      `비용적인 측면`, `필요 리소스 부적합` 등 이유로 인해 직접 구축 필요. <br>
 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => VM에서 Docker 컨테이너로 띄우고, 마운트를 통해 중요 정보들을 저장하자. <br>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => 이후 마이그레이션 시, scp 명령어를 통해 데이터 이전 예정.
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => 이후 마이그레이션 시, scp 명령어를 통해 데이터 이전.
 
 <br>
 <br>
