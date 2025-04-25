@@ -42,7 +42,7 @@
 ### 3. AI
 1. [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI)
 
-### 4. DevOps
+### 4. DevOps - Private
 1. Omni-Manifest
 2. Omni-Manifest-Tool
 
