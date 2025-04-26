@@ -32,23 +32,30 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 <br>
 
 # 프로젝트 Repository
-### 1. FrontEnd
-1. [Omni-FE](https://github.com/2025-Gachon-capstone/Omni-FE)
+### 🖥️ FrontEnd
 
-### 2. BackEnd
-1. [Omni-BE-Gateway](https://github.com/2025-Gachon-capstone/Omni-BE-Gateway)
-2. [Omni-BE-User](https://github.com/2025-Gachon-capstone/Omni-BE-User)
-3. [Omni-BE-Sponsor](https://github.com/2025-Gachon-capstone/Omni-BE-Sponsor)
-4. [Omni-BE-Payment](https://github.com/2025-Gachon-capstone/Omni-BE-Payment)
-5. [Omni-BE-Card](https://github.com/2025-Gachon-capstone/Omni-BE-Card)
-6. [Omni-BE-File](https://github.com/2025-Gachon-capstone/Omni-BE-File)
+| 레포지토리 | 설명 |
+|:---|:---|
+| [Omni-FE](https://github.com/2025-Gachon-capstone/Omni-FE) | |
 
-### 3. AI
-1. [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI)
+#### 🛠️ BackEnd
 
-### 4. DevOps - Private
-1. Omni-Manifest
-2. Omni-Manifest-Tool
+| 레포지토리 | 설명 |
+|:---|:---|
+| [Omni-BE-Gateway](https://github.com/2025-Gachon-capstone/Omni-BE-Gateway) | |
+| [Omni-BE-User](https://github.com/2025-Gachon-capstone/Omni-BE-User) | |
+| [Omni-BE-Sponsor](https://github.com/2025-Gachon-capstone/Omni-BE-Sponsor) | |
+| [Omni-BE-Payment](https://github.com/2025-Gachon-capstone/Omni-BE-Payment) | |
+| [Omni-BE-Card](https://github.com/2025-Gachon-capstone/Omni-BE-Card) | |
+| [Omni-BE-File](https://github.com/2025-Gachon-capstone/Omni-BE-File) | |
+| [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI) | |
+
+#### ⚙️ DevOps (Private)
+
+| 레포지토리 | 설명 |
+|:---|:---|
+| Omni-Manifest | |
+| Omni-Manifest-Tool | |
 
 <br>
 <br>
