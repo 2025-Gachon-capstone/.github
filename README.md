@@ -53,7 +53,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 | 이름(Private) | 설명 |
 |:---|:---|
-| Omni-Manifest | 애플리케이션 Deployment, Secret GitOps Repository |
+| Omni-Manifest | 애플리케이션 배포를 위한 리소스 정의 GitOps Repository |
 | Omni-Manifest-Tool | Grafana, Prometheus 등 툴을 위한 GitOps Repository |
 
 <br>
