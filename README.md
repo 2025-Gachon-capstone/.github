@@ -14,8 +14,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 - [프로젝트 Repository](#프로젝트-repository)
   - [1. FrontEnd](#1-frontend)
   - [2. BackEnd](#2-backend)
-  - [3. AI](#3-ai)
-  - [4. DevOps](#4-devops)
+  - [3. DevOps](#3-devops)
 - [DevOps](#-devops)
   - [1. Architecture](#1-architecture)
   - [2. 설계 개요](#2-설계-개요)
@@ -32,13 +31,13 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 <br>
 
 # 프로젝트 Repository
-### 🖥️ FrontEnd
+### 1. FrontEnd
 
 | 레포지토리 | 설명 |
 |:---|:---|
 | [Omni-FE](https://github.com/2025-Gachon-capstone/Omni-FE) | |
 
-#### 🛠️ BackEnd
+### 2. BackEnd
 
 | 레포지토리 | 설명 |
 |:---|:---|
@@ -50,9 +49,9 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 | [Omni-BE-File](https://github.com/2025-Gachon-capstone/Omni-BE-File) | |
 | [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI) | |
 
-#### ⚙️ DevOps (Private)
+### 3. DevOps
 
-| 레포지토리 | 설명 |
+| 레포지토리(Private) | 설명 |
 |:---|:---|
 | Omni-Manifest | |
 | Omni-Manifest-Tool | |
