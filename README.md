@@ -33,28 +33,28 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 # 프로젝트 Repository
 ### 1. FrontEnd
 
-| 레포지토리 | 설명 |
+| 이름 | 설명 |
 |:---|:---|
-| [Omni-FE](https://github.com/2025-Gachon-capstone/Omni-FE) | |
+| [Omni-FE](https://github.com/2025-Gachon-capstone/Omni-FE) | UI 및 API 통신을 위한 React 레포지토리 |
 
 ### 2. BackEnd
 
-| 레포지토리 | 설명 |
+| 이름 | 설명 |
 |:---|:---|
-| [Omni-BE-Gateway](https://github.com/2025-Gachon-capstone/Omni-BE-Gateway) | |
-| [Omni-BE-User](https://github.com/2025-Gachon-capstone/Omni-BE-User) | |
-| [Omni-BE-Sponsor](https://github.com/2025-Gachon-capstone/Omni-BE-Sponsor) | |
-| [Omni-BE-Payment](https://github.com/2025-Gachon-capstone/Omni-BE-Payment) | |
-| [Omni-BE-Card](https://github.com/2025-Gachon-capstone/Omni-BE-Card) | |
-| [Omni-BE-File](https://github.com/2025-Gachon-capstone/Omni-BE-File) | |
-| [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI) | |
+| [Omni-BE-Gateway](https://github.com/2025-Gachon-capstone/Omni-BE-Gateway) | 라우팅 및 필터를 위한 Spring Gateway 레포지토리 |
+| [Omni-BE-User](https://github.com/2025-Gachon-capstone/Omni-BE-User) | 로그인, 로그아웃 등 유저 관련 API Spring 레포지토리 |
+| [Omni-BE-Sponsor](https://github.com/2025-Gachon-capstone/Omni-BE-Sponsor) | 스폰서 관련 API Spring 레포지토리 |
+| [Omni-BE-Payment](https://github.com/2025-Gachon-capstone/Omni-BE-Payment) | 결제 관련 API Spring 레포지토리 |
+| [Omni-BE-Card](https://github.com/2025-Gachon-capstone/Omni-BE-Card) | 카드 관련 API Spring 레포지토리 |
+| [Omni-BE-File](https://github.com/2025-Gachon-capstone/Omni-BE-File) | 이미지 저장을 위한 API Spring 레포지토리 |
+| [Omni-BE-AI](https://github.com/2025-Gachon-capstone/Omni-BE-AI) | AI 모델 서빙 및 AI 관련 API Flask 레포지토리 |
 
 ### 3. DevOps
 
-| 레포지토리(Private) | 설명 |
+| 이름(Private) | 설명 |
 |:---|:---|
-| Omni-Manifest | |
-| Omni-Manifest-Tool | |
+| Omni-Manifest | 애플리케이션 Deployment, Secret GitOps Repository |
+| Omni-Manifest-Tool | Grafana, Prometheus 등 툴을 위한 GitOps Repository |
 
 <br>
 <br>
