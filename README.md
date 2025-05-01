@@ -63,9 +63,13 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 # 🚀 DevOps
 ## 1. Architecture
 <img width="1217" alt="Image" src="https://github.com/user-attachments/assets/97345605-4f4c-447d-8de8-c7cafc50571e" />
+
 - 3개의 환경으로 구성
+  
   1. `Dev` : React, Spring, Flask, Grafana 등 `GKE 기반 애플리케이션 환경`
+     
   2. `DB` : 3개의 도커 컨테이너 DB + GCS(사용자 프로필 사진용)가 존재하는 `Storage 환경`
+     
   3. `AI` : Vertex AI 관리형 워크로드 및 훈련 데이터 저장용 GCS이 존재하는 `AI 훈련 환경`
 
 <br>
