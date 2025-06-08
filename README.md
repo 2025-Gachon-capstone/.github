@@ -65,7 +65,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 # 🚀 DevOps
 ## 1. Architecture
-<img width="1217" alt="Image" src="https://github.com/user-attachments/assets/97345605-4f4c-447d-8de8-c7cafc50571e" />
+<img width="1217" alt="Image" src="https://github.com/user-attachments/assets/69b6022d-b674-481d-92e1-df4b86cae892" />
 
 - 3개의 환경으로 구성
   
