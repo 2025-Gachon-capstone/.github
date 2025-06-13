@@ -81,7 +81,8 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 ## 2. 설계 개요
 
-### ☁️ 2-1. Cloud Infrastructure
+<details> 
+  <summary>☁️ 2-1. Cloud Infrastructure</summary>
 
 <hr>
 
@@ -134,11 +135,10 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => VM에서 Docker 컨테이너로 띄우고, 마운트를 통해 중요 정보들을 저장하자. <br>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => 이후 마이그레이션 시, scp 명령어를 통해 데이터 이전.
 
-<br>
-<br>
-<br>
+</details>
 
-### ☸️ 2-2. Kubernetes
+<details> 
+  <summary>☸️ 2-2. Kubernetes</summary>
 
 <hr>
 
@@ -233,11 +233,10 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; => Terraform을 이용하여 GKE 생성 시 함께 생성되도록 설정.
 
-<br>
-<br>
-<br>
+</details>
 
-### 2-3. 📚 Micro Service
+<details>
+  <summary>📚 2-3. Micro Service</summary>
 
 <hr>
 
@@ -282,3 +281,4 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
                 url: ${HTTPS_GATEWAY_URL}/user/v3/api-docs
           ```
     3. 접속하여 마이크로 서비스별 Swagger 확인.
+</details>
