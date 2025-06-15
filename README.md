@@ -76,7 +76,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 ## 2. 개발 중점사항
 <details>
-  <summary> 🗂️ 3-1. FSD 아키텍처 설계</summary>
+  <summary> 🗂️ 2-1. FSD 아키텍처 설계</summary>
 
 <hr>
 
@@ -104,7 +104,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 </details>
 
 <details>
-  <summary> ✨ 3-2. Table 컴포넌트 모듈화</summary>
+  <summary> ✨ 2-2. Table 컴포넌트 모듈화</summary>
 
   <hr>
 
@@ -115,7 +115,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 </details>
 
 <details>
-  <summary> 💳 3-3. Toss 위젯을 활용한 결제 기능 구현</summary>
+  <summary> 💳 2-3. Toss 위젯을 활용한 결제 기능 구현</summary>
 
   <hr>
 
