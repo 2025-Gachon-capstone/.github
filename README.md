@@ -3,7 +3,8 @@
 하나의 카드에서 소비자 구매내역에 맞추어 혜택이 변경되도록 하는, <br>
 AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
-### [www.omnicard.shop](https://www.omnicard.shop/)
+### [🔗 www.omnicard.shop](https://www.omnicard.shop/)
+![옴니카드 포트폴리오용 배너](https://github.com/user-attachments/assets/f2b49b03-660d-46b3-820b-d53bea90b3a9)
 
 <br>
 <br>
@@ -25,6 +26,8 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 # 프로젝트 개요
 (진행중...)
+## Information Architecture
+![FE_IA](https://github.com/user-attachments/assets/bb3d3e41-e5a4-44f0-ab7c-a5a972a5d93b)
 
 <br>
 <br>
@@ -58,6 +61,67 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 |:---|:---|
 | Omni-Manifest | 애플리케이션 배포를 위한 리소스 정의 GitOps 레포지토리 |
 | Omni-Manifest-Tool | Grafana, Prometheus 등 툴을 위한 GitOps 레포지토리 |
+
+<br>
+<br>
+<br>
+
+# 🌎 Frontend
+##  1. 기술스택 
+![FE_TechStack](https://github.com/user-attachments/assets/09f8ad86-ea83-4d32-b566-f40027098e42)
+
+
+## 2. 개발 중점사항
+<details>
+  <summary> 🗂️ 3-1. FSD 아키텍처 설계</summary>
+
+<hr>
+
+  - 프로젝트 구조를 **기능 중심(Feature-Based)** 으로 설계하여 폴더 및 모듈의 역할을 명확히 분리
+  - `app`, `features`, `pages`, `shared`, `widgets` 등으로 구조화해 **확장성 있는 코드베이스 구축**
+
+    ```
+      📦src
+      ┣ 📂app           // 앱 초기화, 전역 설정
+      ┃ ┗ 📂routes
+      ┣ 📂features      // 유저 액션 단위 기능
+      ┃ ┗ 📂user (예시)
+      ┃ ┃ ┗ 📂payment
+      ┃ ┃ ┃ ┣ 📂api      // 기능 api
+      ┃ ┃ ┃ ┣ 📂model    // 비즈니스 로직
+      ┃ ┃ ┃ ┣ 📂type     // 타입 정의
+      ┃ ┃ ┃ ┗ 📂ui       // UI 컴포넌트
+      ┣ 📂pages          // 실제 라우팅되는 페이지
+      ┣ 📂shared         // 공통 UI 컴포넌트, 유틸, 스타일 등
+      ┗ 📂widgets        // 페이지 내 조합 단위 UI 블록
+    ```
+  - 팀원 간 작업 충돌을 줄이고, 기능 단위로 개발이 가능하도록 구성
+  - 공통 UI 요소는 `shared`, 사용자 행동 단위 기능은 `features`로 분리하여 **코드 탐색성과 재사용성**을 높임
+
+</details>
+
+<details>
+  <summary> ✨ 3-2. Table 컴포넌트 모듈화</summary>
+
+  <hr>
+
+  - Omni-Card 플랫폼 내 다양한 페이지에 반복되는 내역 화면(`Table UI`)을 재사용 가능한 컴포넌트로 분리하여 구현
+  - **컬럼 데이터 정의 기반의 동적 렌더링 구조**로, 텍스트뿐 아니라 버튼, 스타일 박스 등의 컴포넌트도 셀에 입력값으로 렌더링 가능
+  - 각 컬럼에 **선택적 클릭 이벤트 핸들러**를 연결할 수 있어 사용자 인터랙션 처리에 유연함
+  - 결제 내역, 혜택 리스트, 유저 관리 등 여러 페이지에서 동일한 테이블 레이아웃을 사용하면서도 **간단한 커스터마이징만으로 재사용 가능**, 중복 코드 제거 및 유지보수성 향상
+</details>
+
+<details>
+  <summary> 💳 3-3. Toss 위젯을 활용한 결제 기능 구현</summary>
+
+  <hr>
+
+  - Toss Payments 위젯을 활용해 **가상의 쇼핑몰 결제 시스템 구축**
+  - 결제 과정 중 생성되는 **주문 ID, 결제 금액 등 주요 정보를 `Zustand`로 전역 상태로 관리**
+  - 결제 완료 시 주문 정보 생성 → 결제 인증 완료 피드백 표시까지의 **엔드 투 엔드 흐름을 구현**
+
+</details>
+
 
 <br>
 <br>
@@ -280,3 +344,19 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
           ```
     3. 접속하여 마이크로 서비스별 Swagger 확인.
 </details>
+
+<br>
+<br>
+<br>
+
+# Team
+
+<div align="center">
+
+|**Yoon Seong moon**|**Park Youngjun**|**Ha Beomsu**|**Park ChanYoung**|**Oh Subin**|
+|:-:|:-:|:-:|:-:|:-:|
+|<img src="https://avatars.githubusercontent.com/u/137385615?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/57661519?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/174731707?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/149857288?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/91336314?v=4" width="150" height="150"/>|
+| PM/AI/Frontend | AI | Backend     | DevOps        |Frontend/Design|
+|[@loading1031](https://github.com/loading1031)|[@illuminateP](https://github.com/illuminateP)|[@Habeomsu](https://github.com/Habeomsu)|[@steamedEggMaster](https://github.com/steamedEggMaster)|[@odukong](https://github.com/odukong)|
+
+</div>
