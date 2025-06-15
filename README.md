@@ -16,6 +16,9 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - [1. FrontEnd](#1-frontend)
   - [2. BackEnd](#2-backend)
   - [3. DevOps](#3-devops)
+- [Frontend](#-frontend)
+  - [1. 기술스택](#1-기술스택)
+  - [2. 개발 중점사항](#2-개발-중점사항) 
 - [DevOps](#-devops)
   - [1. Architecture](#1-architecture)
   - [2. 설계 개요](#2-설계-개요)
@@ -353,7 +356,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 <div align="center">
 
-|**Yoon Seong moon**|**Park Youngjun**|**Ha Beomsu**|**Park ChanYoung**|**Oh Subin**|
+|**Yoon Seong mun**|**Park Youngjun**|**Ha Beomsu**|**Park ChanYoung**|**Oh Subin**|
 |:-:|:-:|:-:|:-:|:-:|
 |<img src="https://avatars.githubusercontent.com/u/137385615?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/57661519?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/174731707?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/149857288?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/91336314?v=4" width="150" height="150"/>|
 | PM/AI/Frontend | AI | Backend     | DevOps        |Frontend/Design|
