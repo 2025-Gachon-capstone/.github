@@ -356,7 +356,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 
 <div align="center">
 
-|**Yoon Seong mun**|**Park Youngjun**|**Ha Beomsu**|**Park ChanYoung**|**Oh Subin**|
+|**Yoon Seong mun**|**Park YoungJun**|**Ha BeomSu**|**Park ChanYoung**|**Oh SuBin**|
 |:-:|:-:|:-:|:-:|:-:|
 |<img src="https://avatars.githubusercontent.com/u/137385615?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/57661519?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/174731707?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/149857288?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/91336314?v=4" width="150" height="150"/>|
 | PM/AI/Frontend | AI | Backend     | DevOps        |Frontend/Design|
