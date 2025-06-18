@@ -127,6 +127,13 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - 결제 과정 중 생성되는 **주문 ID, 결제 금액 등 주요 정보를 `Zustand`로 전역 상태로 관리**
   - 결제 완료 시 주문 정보 생성 → 결제 인증 완료 피드백 표시까지의 **엔드 투 엔드 흐름을 구현**
 
+     ```
+      📦 gateway-service // API Gateway
+      📦 user-service    // 사용자 관리
+      📦 card-service    // 카드 등록/조회
+      📦 payment-service // 결제 처리
+      📦 sponsor-service // 스폰서 혜택 관리
+     ```
 </details>
 
 
@@ -148,6 +155,16 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 <br>
 
 ## 3. 개발 중점사항
+<details>
+  <summary> 🧱 3-1. MSA 기반 서비스 분리</summary>
+
+  <hr>
+
+  - **도메인 기반 설계(DDD)** 원칙에 따라 서비스 단위로 기능을 분리하여, 각각의 독립된 애플리케이션으로 구성
+  - 각 서비스는 **완전히 독립된 Git 저장소(Repository)** 로 관리
+  - 서비스 간 결합도를 낮춰 **유지보수성과 확장성**을 확보
+
+</details>
 
 <br>
 <br>
