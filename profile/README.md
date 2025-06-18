@@ -126,15 +126,6 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - Toss Payments 위젯을 활용해 **가상의 쇼핑몰 결제 시스템 구축**
   - 결제 과정 중 생성되는 **주문 ID, 결제 금액 등 주요 정보를 `Zustand`로 전역 상태로 관리**
   - 결제 완료 시 주문 정보 생성 → 결제 인증 완료 피드백 표시까지의 **엔드 투 엔드 흐름을 구현**
-
-    ```
-        📦 gateway-service // API Gateway
-        📦 user-service    // 사용자 관리
-        📦 card-service    // 카드 등록/조회
-        📦 payment-service // 결제 처리
-        📦 sponsor-service // 스폰서 혜택 관리
-    ```
-  - 각 서비스는 **완전한 자율성과 독립성**을 가지며, 장애 전파 방지 및 수평 확장에 유리한 구조로 운영 가능
 </details>
 
 
@@ -164,6 +155,15 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - **도메인 기반 설계(DDD)** 원칙에 따라 서비스 단위로 기능을 분리하여, 각각의 독립된 애플리케이션으로 구성
   - 각 서비스는 **완전히 독립된 Git 저장소(Repository)** 로 관리
   - 서비스 간 결합도를 낮춰 **유지보수성과 확장성**을 확보
+
+    ```
+        📦 gateway-service // API Gateway
+        📦 user-service    // 사용자 관리
+        📦 card-service    // 카드 등록/조회
+        📦 payment-service // 결제 처리
+        📦 sponsor-service // 스폰서 혜택 관리
+    ```
+  - 각 서비스는 **완전한 자율성과 독립성**을 가지며, 장애 전파 방지 및 수평 확장에 유리한 구조로 운영 가능
 
 </details>
 
