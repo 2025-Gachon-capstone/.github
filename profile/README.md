@@ -162,9 +162,22 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
         📦 card-service    // 카드 등록/조회
         📦 payment-service // 결제 처리
         📦 sponsor-service // 스폰서 혜택 관리
+        📦 file-service // 이미지 파일 관리
+        📦 ai-service // AI 모델 관리
     ```
   - 각 서비스는 **완전한 자율성과 독립성**을 가지며, 장애 전파 방지 및 수평 확장에 유리한 구조로 운영 가능
 
+</details>
+
+<details>
+  <summary> 🧱 3-2. OpenFeign을 활용한 내부 통신</summary>
+
+  <hr>
+
+  - 서비스 간 통신은 `OpenFeign`을 기반으로 인터페이스 선언만으로 구현
+  - 각 서비스 간의 의존성은 **HTTP 기반 통신에 국한**되며, 코드 수준의 결합은 없음
+  - 통신 중 발생 가능한 예외에 대해 `@FeignClient`의 `fallback` 처리를 통해 **서비스 안정성 확보**
+  - Gateway를 통한 경로 분기 및 라우팅 처리로 **외부 요청의 진입점 통제**
 </details>
 
 <br>
