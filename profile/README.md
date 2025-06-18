@@ -170,7 +170,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 </details>
 
 <details>
-  <summary> 🧱 3-2. OpenFeign을 활용한 내부 통신</summary>
+  <summary> 🔁 3-2. OpenFeign을 활용한 내부 통신</summary>
 
   <hr>
 
@@ -178,6 +178,16 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - 각 서비스 간의 의존성은 **HTTP 기반 통신에 국한**되며, 코드 수준의 결합은 없음
   - 통신 중 발생 가능한 예외에 대해 `@FeignClient`의 `fallback` 처리를 통해 **서비스 안정성 확보**
   - Gateway를 통한 경로 분기 및 라우팅 처리로 **외부 요청의 진입점 통제**
+</details>
+
+<details>
+  <summary> 🔐 3-3. Gateway 기반 인증 처리</summary>
+
+  <hr>
+
+  - JWT 기반 인증을 도입하고, 인증 필터는 `API Gateway`에서 전처리
+  - 클라이언트는 Access/Refresh Token을 통해 인증을 진행하며, 각 마이크로서비스에서는 인증 완료된 사용자 정보만 활용
+  - 인증 처리 로직은 각 서비스로 공유되지 않으며, **Gateway 레벨에서만 집중 관리**하여 **보안성과 일관성 확보**
 </details>
 
 <br>
