@@ -141,7 +141,7 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 <br>
 
 ## 2. ERD
-![Omni Card](https://github.com/user-attachments/assets/a7591957-90ac-4b80-a3f7-18830dd07948)
+![Omni Card (2)](https://github.com/user-attachments/assets/a6163e18-0818-4316-bcd2-cc2d9c8d8ddc)
 
 ## 3. 개발 중점사항
 <details>
