@@ -132,9 +132,20 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 <br>
 <br>
 
-# 🛠️ Backend
+# Backend
 ## 1. 기술스택
 
+<br>
+<br>
+<br>
+
+## 2. ERD
+
+<br>
+<br>
+<br>
+
+## 3. 개발 중점상황
 
 <br>
 <br>
