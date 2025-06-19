@@ -18,7 +18,11 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - [3. DevOps](#3-devops)
 - [Frontend](#-frontend)
   - [1. 기술스택](#1-기술스택)
-  - [2. 개발 중점사항](#2-개발-중점사항) 
+  - [2. 개발 중점사항](#2-개발-중점사항)
+- [Backend](#-backend)
+  - [1. 기술스택](#1-기술스택-1)
+  - [2. erd](#2-erd)
+  - [3. 개발 중점사항](#3-개발-중점사항)
 - [DevOps](#-devops)
   - [1. Architecture](#1-architecture)
   - [2. 설계 개요](#2-설계-개요)
@@ -122,9 +126,63 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
   - Toss Payments 위젯을 활용해 **가상의 쇼핑몰 결제 시스템 구축**
   - 결제 과정 중 생성되는 **주문 ID, 결제 금액 등 주요 정보를 `Zustand`로 전역 상태로 관리**
   - 결제 완료 시 주문 정보 생성 → 결제 인증 완료 피드백 표시까지의 **엔드 투 엔드 흐름을 구현**
+</details>
+
+
+<br>
+<br>
+<br>
+
+# 🌱 Backend
+## 1. 기술스택
+![image](https://github.com/user-attachments/assets/6a5a476c-95d9-482e-8342-14f4b0d705e4)
+
+## 2. ERD
+![image](https://github.com/user-attachments/assets/8a52389f-17bb-420c-8778-d595a91d3b09)
+
+## 3. 개발 중점사항
+<details>
+  <summary> 🧱 3-1. MSA 기반 서비스 분리</summary>
+
+  <hr>
+
+  - **도메인 기반 설계(DDD)** 원칙에 따라 서비스 단위로 기능을 분리하여, 각각의 독립된 애플리케이션으로 구성
+  - 각 서비스는 **완전히 독립된 Git 저장소(Repository)** 로 관리
+  - 서비스 간 결합도를 낮춰 **유지보수성과 확장성**을 확보
+
+    ```
+        📦 gateway-service // API Gateway
+        📦 user-service    // 사용자 관리
+        📦 card-service    // 카드 등록/조회
+        📦 payment-service // 결제 처리
+        📦 sponsor-service // 스폰서 혜택 관리
+        📦 file-service // 이미지 파일 관리
+        📦 ai-service // AI 모델 관리
+    ```
+  - 각 서비스는 **완전한 자율성과 독립성**을 가지며, 장애 전파 방지 및 수평 확장에 유리한 구조로 운영 가능
 
 </details>
 
+<details>
+  <summary> 🔁 3-2. OpenFeign을 활용한 내부 통신</summary>
+
+  <hr>
+
+  - 서비스 간 통신은 `OpenFeign`을 기반으로 인터페이스 선언만으로 구현
+  - 각 서비스 간의 의존성은 **HTTP 기반 통신에 국한**되며, 코드 수준의 결합은 없음
+  - 통신 중 발생 가능한 예외에 대해 `@FeignClient`의 `fallback` 처리를 통해 **서비스 안정성 확보**
+  - Gateway를 통한 경로 분기 및 라우팅 처리로 **외부 요청의 진입점 통제**
+</details>
+
+<details>
+  <summary> 🔐 3-3. Gateway 기반 인증 처리</summary>
+
+  <hr>
+
+  - JWT 기반 인증을 도입하고, 인증 필터는 `API Gateway`에서 전처리
+  - 클라이언트는 Access/Refresh Token을 통해 인증을 진행하며, 각 마이크로서비스에서는 인증 완료된 사용자 정보만 활용
+  - 인증 처리 로직은 각 서비스로 공유되지 않으며, **Gateway 레벨에서만 집중 관리**하여 **보안성과 일관성 확보**
+</details>
 
 <br>
 <br>
