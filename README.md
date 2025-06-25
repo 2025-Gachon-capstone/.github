@@ -31,8 +31,6 @@ AI 기반 맞춤 카드 혜택 플랫폼, **Omni Card** 입니다.
 <br>
 <br>
 
-# 프로젝트 개요
-(진행중...)
 ## Information Architecture
 ![FE_IA](https://github.com/user-attachments/assets/bb3d3e41-e5a4-44f0-ab7c-a5a972a5d93b)
 
